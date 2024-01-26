@@ -4,7 +4,7 @@ const Home = () => (
 
  <div>
 
-<h1>Hello world, it's me Iana Diab form Berlin coming soon to Thailand :)</h1>
+<h1>Hello world, it's from Berlin :)</h1>
 
  </div>
 );
