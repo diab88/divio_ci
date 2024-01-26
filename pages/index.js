@@ -4,7 +4,7 @@ const Home = () => (
 
  <div>
 
-<h1>Welcome to Next.js!</h1>
+<h1>Hello world, it's me Iana .js!</h1>
 
  </div>
 );
