@@ -1,1 +1,17 @@
+name: Deploy Test
 
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+      - name: Deploy test app
+        run: |
+          curl -X POST --data "environment=${{ secrets.LIVE_ENVIRONMENT_UUID }}" --header "Authorization: Token ${{ secrets.API_TOKEN }}" https://api.divio.com/apps
