@@ -4,7 +4,7 @@ const Home = () => (
 
  <div>
 
-<h1>Hello world from Berlin again!!!</h1>
+<h1>Hello world from Berlin!</h1>
 
  </div>
 );
