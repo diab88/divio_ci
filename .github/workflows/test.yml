@@ -14,4 +14,4 @@ jobs:
         uses: actions/checkout@v3
       - name: Deploy test app
         run: |
-          curl -X POST --data "environment=${{ secrets.LIVE_ENVIRONMENT_UUID }}" --header "Authorization: Token ${{ secrets.API_TOKEN }}" https://api.divio.com/apps
+          curl -X POST --data "environment=${{ secrets.TEST_ENVIRONMENT_UUID }}" --header "Authorization: Token ${{ secrets.API_TOKEN }}" https://api.divio.com/apps
